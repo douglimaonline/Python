@@ -2,6 +2,7 @@
 from art import logo, vs
 from game_data import data
 import random
+import os
 
 def select_person():
   person = random.choice (data)
@@ -24,6 +25,7 @@ def set_choose ():
     set_choose()
 
 def set_vs():
+  print ('Quem tem mais seguidor no Instagram? \n')
   print (f"A - {first_person['name']}, {first_person['description']} nascido(a) no(a) {first_person['country']}, com {first_person['follower_count']}M de seguidores.")
   print (f'{vs}\n')
   print (f"B - {second_person['name']}, {second_person['description']} nascido(a) no(a) {second_person['country']}.")
@@ -33,10 +35,10 @@ def set_vs():
 is_game_over = False
 score = 0
 first_person = select_person()
-print (f'{logo}\n')
-print ('Quem tem mais seguidor no Instagram? \n')
 
 while not is_game_over:
+  os.system('cls')
+  print (f'{logo}\n')
 
   second_person = select_person() 
   while second_person == first_person: # correção para não repetir a pessoa
@@ -52,7 +54,10 @@ while not is_game_over:
   if (set_compare(a = first_person['follower_count'], b = second_person['follower_count'])) == chosen_person:
     first_person = chosen_person
     score +=1
-    
+    os.system('cls')
   else:
-    print (f"Sua pontuação foi {score}.")
     is_game_over = True
+    os.system('cls')
+    print (f'{logo}\n')
+    print (f"Sua pontuação foi {score}.")
+    
