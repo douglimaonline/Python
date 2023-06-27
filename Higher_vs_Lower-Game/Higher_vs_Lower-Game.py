@@ -42,14 +42,12 @@ while not is_game_over:
 
   second_person = select_person() 
   while second_person == first_person: # correção para não repetir a pessoa
-    second_person = select_person()
-    
+    second_person = select_person() 
   
   set_vs()
   print ('\n')
   
   chosen_person = set_choose()
-  
   
   if (set_compare(a = first_person['follower_count'], b = second_person['follower_count'])) == chosen_person:
     first_person = chosen_person
