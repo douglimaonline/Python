@@ -1,4 +1,4 @@
-from menu import Menu, MenuItem
+from menu import Menu
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
 
@@ -12,7 +12,7 @@ is_machine_on = True
 
 while is_machine_on:
     chosen_drink = input(f' What would you like? {menu.get_items()}? ')
-    order = menu.find_drink(chosen_drink)
+    order = menu.find_drink(chosen_drink.lower())
 
     # TODO 2: Turn off the Coffee Machine by entering “ off ” to the prompt
 
