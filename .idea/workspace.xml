@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d245a4a-01eb-4d47-bd29-77a70ad40d72" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Material de Consulta/01 - Introdução ao HTML.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/beatifulsoap/01 - Introdução ao HTML.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Material de Consulta/bealtifulsoup.py" beforeDir="false" afterPath="$PROJECT_DIR$/beatifulsoap/bealtifulsoup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Material de Consulta/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/beatifulsoap/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Material de Consulta/testeseleniumwebscrap.py" beforeDir="false" afterPath="$PROJECT_DIR$/beatifulsoap/testeseleniumwebscrap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz-game-start/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-game-start/data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz-game-start/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-game-start/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz-game-start/question_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz-game-start/quiz_brain.py" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-game-start/quiz_brain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pong/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pong/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pong/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pong/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pong/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Portfolio" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -31,6 +30,7 @@
     <option name="sortByName" value="true" />
   </component>
   <component name="ProjectId" id="2RnA53tQHho2MOzHOxXJynYCyu3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,8 +38,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/dougl/PycharmProjects/turtleProject/hirst-paiting",
+    "last_opened_file_path": "G:/My Drive/Projetos/Portfolio",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
