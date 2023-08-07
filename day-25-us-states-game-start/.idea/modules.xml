@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../Reading CSV/.idea/Reading CSV.iml" filepath="$PROJECT_DIR$/../Reading CSV/.idea/Reading CSV.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/day-25-us-states-game-start.iml" filepath="$PROJECT_DIR$/.idea/day-25-us-states-game-start.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../Portfolio/snake_game/.idea/snake_game.iml" filepath="$PROJECT_DIR$/../../Portfolio/snake_game/.idea/snake_game.iml" />
     </modules>
   </component>
 </project>

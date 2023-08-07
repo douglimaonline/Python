@@ -28,5 +28,3 @@ while len(guessed_list) < 50:
         pass
     except ValueError:
         pass
-
-screen.exitonclick()
