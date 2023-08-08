@@ -16,6 +16,12 @@ while len(guessed_list) < 50:
     answer = screen.textinput(title=f"Guess the State ({len(guessed_list)}/50)",
                               prompt="What's another state?")
     chosen = data[data.state == answer.title()]
+
+    if answer.title() == "Exit":
+        missing_states = [state for state in states if state not in guessed_list]
+        new_data = pd.DataFrame(missing_states)
+        new_data.to_csv("states_to_learn.csv")
+        break
     try:
         place_name = Turtle()
         place_name.penup()
