@@ -1,9 +1,15 @@
-with open("file1.txt") as data_file1:
-    file1 = data_file1.readlines()
-with open("file2.txt") as data_file2:
-    file2 = data_file2.readlines()
-result = [int(num) for num in file1 if num in file2]
-# Write your code above 👆
+weather_c = {
+    "Monday": 12,
+    "Tuesday": 14,
+    "Wednesday": 15,
+    "Thursday": 14,
+    "Friday": 21,
+    "Saturday": 22,
+    "Sunday": 24,
+}
+# 🚨 Don't change code above 👆
 
-print(result)
 
+# Write your code 👇 below:
+weather_f = {day: (temp_c * 9 / 5) + 32 for (day, temp_c) in weather_c.items()}
+print(weather_f)
