@@ -1,25 +1,53 @@
 from tkinter import *
 from tkinter import messagebox
+from random import randint, choice, shuffle
+import pyperclip
 
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
+def generate_password():
+    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+               'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P',
+               'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+    password_letters = [choice(letters) for char in range(randint(8, 10))]
+    password_numbers = [choice(numbers) for char in range(randint(2, 4))]
+    password_symbols = [choice(symbols) for char in range(randint(2, 4))]
+
+    password_list = password_letters + password_numbers + password_symbols
+    shuffle(password_list)
+    password = "".join(password_list)
+    entry_password.delete(0, END)
+    entry_password.insert(0, password)
+    pyperclip.copy(password)
+
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 def save():
-    save_password = messagebox.askokcancel(title="Save Password",
-                                           message=f"Website: {entry_website.get()}\n"
-                                                   f"E-mail: {entry_email.get()}\n"
-                                                   f"Password: {entry_password.get()}")
-    if save_password:
-        with open("data.txt", "a") as data:
-            data.write(f"{entry_website.get()} | {entry_email.get()} | {entry_password.get()}\n")
-            data.close()
-        entry_email.delete(0, END)
-        entry_website.delete(0, END)
-        entry_password.delete(0, END)
+    website = entry_website.get()
+    login = entry_email.get()
+    password = entry_password.get()
+
+    if website == "" or login == "" or password == "":
+        messagebox.showinfo(title="Empty Field", message="Please don't leave any field empty!")
+    else:
+        save_password = messagebox.askyesno(title="Save Password",
+                                            message=f"Would you like to save the {website.title()} password?")
+        if save_password:
+            with open("data.txt", "a") as data:
+                data.write(f"{website} | {login} | {password}\n")
+                data.close()
+            messagebox.showinfo(title="Saved Password",
+                                message=f"{website.title()} Password saved.")
+            entry_website.delete(0, END)
+            entry_email.delete(0, END)
+            entry_password.delete(0, END)
 
 
 # ---------------------------- UI SETUP ------------------------------- #
+
 
 window = Tk()
 window.title("Password Manager")
@@ -48,7 +76,7 @@ entry_password = Entry(width=27)
 entry_password.grid(column=1, row=3)
 
 # Add button
-button_password = Button(text="Generate Password", width=14)
+button_password = Button(text="Generate Password", width=14, command=generate_password)
 button_password.grid(column=2, row=3)
 
 button_add = Button(text="Add", width=43, command=save)
