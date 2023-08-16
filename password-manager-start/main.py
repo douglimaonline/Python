@@ -25,11 +25,29 @@ def generate_password():
     pyperclip.copy(password)
 
 
+# ---------------------------- SEARCH PASSWORD ------------------------------- #
+def find_password():
+    try:
+        website = entry_website.get().lower()
+        with open("data.json", "r") as data_file:
+            try:
+                data = json.load(data_file)
+                website_data = data[website]
+                login = website_data["login"]
+                password = website_data["password"]
+                messagebox.showinfo(title=f"{website.title()}", message=f"Login: {login}\n"
+                                                                        f"Password: {password}")
+            except KeyError:
+                messagebox.showinfo(title=f"Error", message=f"No details for website exists.")
+    except FileNotFoundError:
+        messagebox.showinfo(title=f"Error", message=f"No Data File Found.")
+
+
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 def save():
-    website = entry_website.get()
-    login = entry_email.get()
-    password = entry_password.get()
+    website = entry_website.get().lower()
+    login = entry_email.get().lower()
+    password = entry_password.get().lower()
     new_data = {website: {
         "login": login,
         "password": password
@@ -80,8 +98,8 @@ label_password = Label(text="Password:")
 label_password.grid(column=0, row=3)
 
 # Entries
-entry_website = Entry(width=45)
-entry_website.grid(column=1, row=1, columnspan=2)
+entry_website = Entry(width=27)
+entry_website.grid(column=1, row=1)
 entry_website.focus()
 entry_email = Entry(width=45)
 entry_email.grid(column=1, row=2, columnspan=2)
@@ -89,6 +107,9 @@ entry_password = Entry(width=27)
 entry_password.grid(column=1, row=3)
 
 # Add button
+search_password = Button(text="Search", width=14, command=find_password)
+search_password.grid(column=2, row=1)
+
 button_password = Button(text="Generate Password", width=14, command=generate_password)
 button_password.grid(column=2, row=3)
 
