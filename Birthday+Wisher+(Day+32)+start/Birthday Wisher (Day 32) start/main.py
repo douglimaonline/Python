@@ -1,9 +1,20 @@
 import smtplib
+import datetime as dt
+import random
 
-my_email = "douglasbarbozadev@gmail.com"
-password = "xqitmvsnarwtwvdv"
+now = dt.datetime.now()
+weekday = now.weekday()
 
-with smtplib.SMTP_SSL("smtp.gmail.com", 465) as connection:
-    connection.login(user=my_email, password=password)
-    connection.sendmail(from_addr=my_email, to_addrs="douglimaonline@gmail.com",
-                        msg="Subject:Automatic Hello\n\nMessenger send by python smtplib by douglas_barboza_dev")
+if weekday == 2:
+
+    MY_EMAIL = "douglasbarbozadev@gmail.com"
+    PASSWORD = "xqitmvsnarwtwvdv"
+
+    with open("quotes.txt") as quotes:
+        all_quotes = [quote for quote in quotes]
+        random_quote = random.choice(all_quotes)
+
+    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as connection:
+        connection.login(user=MY_EMAIL, password=PASSWORD)
+        connection.sendmail(from_addr=MY_EMAIL, to_addrs="douglimaonline@gmail.com",
+                            msg=f"Subject:Your Motivation today\n\n{random_quote}")
