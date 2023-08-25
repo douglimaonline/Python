@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73f1baee-cbaa-4f90-aed5-f066eeac5a2d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/birthdays.csv" beforeDir="false" afterPath="$PROJECT_DIR$/birthdays.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/letter_templates/letter_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/letter_templates/letter_1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/letter_templates/letter_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/letter_templates/letter_2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/letter_templates/letter_3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/letter_templates/letter_3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="73f1baee-cbaa-4f90-aed5-f066eeac5a2d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +23,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "G:/My Drive/Projetos/Python/Birthday+Wisher+(Day+32)+start"
+    "last_opened_file_path": "G:/My Drive/Projetos/Python/kanye-quotes-start"
   }
 }]]></component>
   <component name="RunManager">
