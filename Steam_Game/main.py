@@ -82,6 +82,7 @@ while is_game_on:
 # corrigir jogos repitidos
 # - interface tkinter
 # - se for a msm qtd de hr, buscar outro jogo
+# Acima de mil horas, alterar a forma de criar alternativos
 
 # Viper
 # --- pontuação all time
